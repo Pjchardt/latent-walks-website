@@ -42,13 +42,23 @@
                 “The gentle sound of water from the pond, a duck's quack, the quiet hum of insects in the air.”
             </i></p>
             <p class="main-text">
-                Our world is AudioLDM2, an AI model that generates audio from text. First we encode the words for both prompts A and B, which converts each string of text into a tensor, which is a fancy name for a list of decimal numbers. This conversion places these text prompts into the latent space of the text encoder model, in this case the two encoder models; a text-branch of CLAP and the text-encoder of Flan-T5. Once we have the text prompts embedded in the latent space, let’s visualize the text prompts as each being a point in a high-dimensional space… like two dots on a piece of paper, but with hundreds of more dimensions than two (X,Y) of a plane. And don’t worry, you are not alone, our brains can’t visualize dimensional spaces above 3 (or maybe 4 with practice). Now that we have our two points we can use simple linear algebra to subtract our second point from our first point which gives us the path (vector) that points from text prompt A to text prompt B. With our path described, we can use a bit more math to walk along this path and generate audio at specific points we choose. The points we choose (and every point along the path)  describe a specific text prompt embedding, but we don’t know what these text prompts are; what we do know is that prompts (points) closer to A sound more like A and prompts (points) closer to B sound more like B. What is interesting is that if we move among the audio clips we generate along this path, we can hear what it sounds like to move from prompt A to prompt B. Let’s take a pleasant stroll along this path.
+                The world where we will take our stroll is AudioLDM2, an AI model that generates audio from text. To start, we encode text prompts A and B into tensors, transforming them into numerical representations within the latent space of the text encoder models. Imagine these prompts as points in a multi-dimensional space, akin to dots on a paper but in way more dimensions. And don’t worry, you are not alone, our brains struggle to visualize dimensional spaces above 3, let alone hundreds or thousands of dimensions. 
             </p>
+            <p class="main-text">
+                Now that we have our two points we can use math (linear algebra) to subtract our second point from our first point, which gives us a vector that marks the path from prompt A to B. As we mathematically stroll along this path, we generate audio at selected points.  Each point represents a unique text prompt embedding, with sounds gradually shifting from resembling A to B. This exploration allows us to audibly experience the transition between two textual concepts. Let’s take a pleasant stroll along this path, creating an engaging sonic journey through the model's latent space.
+            </p>
+            <h4 class="interactive-title-text">Interactive Example #1: A 1d Walk</h4>
             <div class="iframe-container">
                 <iframe frameborder="0" src="https://itch.io/embed-upload/10287336?border_width=3&amp;border_color=ffffff" allowfullscreen="" width="600" height="250"><a href="https://pjchardt.itch.io/latent-walks-1d-path">Play Latent Walks: 1D Path on itch.io</a></iframe>
             </div>
+            <p class="interactive-caption-text ">
+                Click in the window to focus, then use the arrow keys to move left and right along the path. As you navigate, listen to how the audio changes, reflecting the shift from one text prompt to another. The three white dots in the middle represent audio clips generated from interpolated embedded prompts, showcasing our mathematical journey through the latent space.
+            </p>
         </div>
-        <a href="walks_1.html">Link Text</a>
+        <div style="text-align: right;">
+            <a href="walks_1.html">Next Walk: A 2D park to stroll through -></a>
+        </div>
+        
         <!--<div class="container">
             <div class="iframe-container">
                 <iframe frameborder="0" src="https://itch.io/embed-upload/10284265?color=ffffff" allowfullscreen="" width="auto" height="auto">
