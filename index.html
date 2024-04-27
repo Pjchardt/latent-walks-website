@@ -1,33 +1,77 @@
-<p>
-    Title: Latent Walks
-</p>
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="main.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="container">
+            <h2> Title: Latent Walks </h2>
+            <p>
+                Abstract: The <span class=highlight-black>computational</span> work of art in the age of 
+                <span class = strikethrough>mechanical</span> <span class=highlight-green>generative</span> 
+                <span class = strikethrough>reproduction</span> <span class=highlight-orange>reproduction</span>.
+            </p>
+            <p><span class=highlight-black>
+                computational - the work is performed by computing units able to run massively parallel mathematical operations
+            </span>
+            </p>
+            <p> <span class=highlight-green>
+                generative - having the power of origination, showing thought and spontaneity
+            </span></p>
+            <p><span class=highlight-orange>
+                reproduction (biological) - the production of offspring, as opposed to the production of copies</span>
+            </span></p>
+            <p class="main-text">
+                The assembly line introduced interchangeable parts and the conveyance of the assembly, not the assembler. The automobile assembly line in America ushered in the age of the automobile and with it vast economic gains through order of magnitude increases in productivity. Artificial intelligence, specifically generative AI and other neural network architectures, are today championed as the next paradigm shift in productivity, promising untold new gains. Architecture diagrams of individual AI systems suggest the schematics of the interchangeable machines of the 19th and early 20th century assembly lines. Like the machines, it is possible to assemble these generative systems in complex assembly line sequences, or even break out of linearity into networks, to produce exponentially more vast phenomenological sensory assets and experiences than previously possible. Questions naturally arise: how can these systems be constructed to generate new possibilities for experience and just-in-time personality-specific phenomena? How does the social nature of shared story and experience change when the story and experience is authored for each individual? What happens when changes are made to components of these generative assembly lines and how do these changes perpetuate through the system and its output? If the medium was the message in the days of McLuhan, the medium is now the soil, the raw material, the genetic material.
+            </p>
+            <p class="main-text">
+                The form of this project is space:  physical space, virtual space, latent space, and the magic circle. This project wants to know embodiment at the intersection of virtual and physical, specifically how magic circles occupying privileged orientations inside the intersectional space of physical and virtual enable embodied navigation and play in latent space and how this play is powered by the assembly line networks of generative systems. 
+            </p>
+            <p class="main-text">
+                The vehicle we will drive through space is the human body in concert with mathematical computation. To illustrate with a specific example, we can apply linear algebra to compute and map the direction and distance between two text prompts existing in the latent space of their model. In this example we choose to drive the cartesian coordinates of this space by the human body as GPS position on Earth. In this way, one can take a walk through the latent space of a generative model. Interestingly, by selecting an audio diffusion model as our generative system and playing sampled outputs, one hears the latent space as one takes a physical walk. Building up this system as an assembly line of generative production, a new form of experience is made real. The investigation of these latent walks, the assembly lines that produce them, and the ramifications of this rupture in work and production for the individual and society is the focus of this research.
+            </p>
+        </div>
+        <div class="container">
+            <h3>Walk #1: A stroll through sonic spaces.</h3>
+            <p>Our first stroll is a linear path. At the start of the path is Text Prompt A:</p>
+            <p class="prompt-text"><i>
+                “The distant sound of children playing, birds chirping in the canopy, the soft rustle of leaves underfoot.”
+            </i></p>
+            <p>And at the other end of the path is Text Prompt B:</p>
+            <p class="prompt-text"><i>
+                “The gentle sound of water from the pond, a duck's quack, the quiet hum of insects in the air.”
+            </i></p>
+            <p class="main-text">
+                Our world is AudioLDM2, an AI model that generates audio from text. First we encode the words for both prompts A and B, which converts each string of text into a tensor, which is a fancy name for a list of decimal numbers. This conversion places these text prompts into the latent space of the text encoder model, in this case the two encoder models; a text-branch of CLAP and the text-encoder of Flan-T5. Once we have the text prompts embedded in the latent space, let’s visualize the text prompts as each being a point in a high-dimensional space… like two dots on a piece of paper, but with hundreds of more dimensions than two (X,Y) of a plane. And don’t worry, you are not alone, our brains can’t visualize dimensional spaces above 3 (or maybe 4 with practice). Now that we have our two points we can use simple linear algebra to subtract our second point from our first point which gives us the path (vector) that points from text prompt A to text prompt B. With our path described, we can use a bit more math to walk along this path and generate audio at specific points we choose. The points we choose (and every point along the path)  describe a specific text prompt embedding, but we don’t know what these text prompts are; what we do know is that prompts (points) closer to A sound more like A and prompts (points) closer to B sound more like B. What is interesting is that if we move among the audio clips we generate along this path, we can hear what it sounds like to move from prompt A to prompt B. Let’s take a pleasant stroll along this path.
+            </p>
+            <div class="iframe-container">
+                <iframe frameborder="0" src="https://itch.io/embed-upload/10287336?border_width=3&amp;border_color=ffffff" allowfullscreen="" width="600" height="250"><a href="https://pjchardt.itch.io/latent-walks-1d-path">Play Latent Walks: 1D Path on itch.io</a></iframe>
+            </div>
+        </div>
+        <a href="walks_1.html">Link Text</a>
+        <!--<div class="container">
+            <div class="iframe-container">
+                <iframe frameborder="0" src="https://itch.io/embed-upload/10284265?color=ffffff" allowfullscreen="" width="auto" height="auto">
+                    <a href="https://pjchardt.itch.io/latent-walks-2d-5x5-musicgen"> 
+                        Play Latent Walks: 2D 5x5 musicGen on itch.io
+                    </a>
+                </iframe>
+            </div>
+        </div>-->
+    </body>
+</html>
 
-<p>
-    Abstract: The computational work of art in the age of mechanical generative reproduction reproduction.
-</p>
 
-<p>
-    computational - the work is performed by computing units able to run massively parallel mathematical operations
-</p>
 
-<p>
-    generative - having the power of origination, showing thought and spontaneity
-</p>
 
-<p>
-    reproduction (biological) - the production of offspring, as opposed to the production of copies 
-</p>
 
-<p>
-    The assembly line introduced interchangeable parts and the conveyance of the assembly, not the assembler. The automobile assembly line in America ushered in the age of the automobile and with it vast economic gains through order of magnitude increases in productivity. Artificial intelligence, specifically generative AI and other neural network architectures, are today championed as the next paradigm shift in productivity, promising untold new gains. Architecture diagrams of individual AI systems suggest the schematics of the interchangeable machines of the 19th and early 20th century assembly lines. Like the machines, it is possible to assemble these generative systems in complex assembly line sequences, or even break out of linearity into networks, to produce exponentially more vast phenomenological sensory assets and experiences than previously possible. Questions naturally arise: how can these systems be constructed to generate new possibilities for experience and just-in-time personality-specific phenomena? How does the social nature of shared story and experience change when the story and experience is authored for each individual? What happens when changes are made to components of these generative assembly lines and how do these changes perpetuate through the system and its output? If the medium was the message in the days of McLuhan, the medium is now the soil, the raw material, the genetic material.
-    The form of this project is space:  physical space, virtual space, latent space, and the magic circle. This project wants to know embodiment at the intersection of virtual and physical, specifically how magic circles occupying privileged orientations inside the intersectional space of physical and virtual enable embodied navigation and play in latent space and how this play is powered by the assembly line networks of generative systems. 
-    The vehicle we will drive through space is the human body in concert with mathematical computation. To illustrate with a specific example, we can apply linear algebra to compute and map the direction and distance between two text prompts existing in the latent space of their model. In this example we choose to drive the cartesian coordinates of this space by the human body as GPS position on Earth. In this way, one can take a walk through the latent space of a generative model. Interestingly, by selecting an audio diffusion model as our generative system and playing sampled outputs, one hears the latent space as one takes a physical walk. Building up this system as an assembly line of generative production, a new form of experience is made real. The investigation of these latent walks, the assembly lines that produce them, and the ramifications of this rupture in work and production for the individual and society is the focus of this research.
-</p>
 
- <section>
-    <iframe frameborder="0" src="https://itch.io/embed-upload/10244565?color=ffffff" allowfullscreen="" width="800" height="450"><a href="https://pjchardt.itch.io/latent-walks-audio-path">Play Latent Walks: Audio Path on itch.io</a></iframe>
-</section>
 
-testing!!!!!!!!!!!!!!!!!!!
 
-<iframe frameborder="0" src="https://itch.io/embed-upload/10284265?color=ffffff" allowfullscreen="" width="800" height="470"><a href="https://pjchardt.itch.io/latent-walks-2d-5x5-musicgen">Play Latent Walks: 2D 5x5 musicGen on itch.io</a></iframe>
+
+
+
+
+
+
+

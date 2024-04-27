@@ -1,0 +1,66 @@
+
+body {
+    font-family: droid-sans-mono, monospace; font-style: normal; font-weight: 100;
+    font-size: 13px;   
+    line-height: 1.25; 
+    width: 700px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    color: #e9e9e9;
+  }
+
+  .container {
+      padding: 50px;
+      margin-bottom: 20px;
+      background-color: #6e6d6d;
+  }
+
+p.main-text {
+    text-indent: 40px;  /* Indent the first line of each paragraph */
+    margin-top: 0;      /* Remove the top margin */
+    margin-bottom: 0;   /* Remove the bottom margin */
+}
+
+p.prompt-text {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+  .iframe-container {
+    position: relative;        /* Establishes a positioning context */
+    width: 100%;               /* Container takes up 100% of parent width */
+    padding-top: 41.67%;       /* Top padding is percentage of parent width, 16:9 aspect ratio */
+    margin-top: 50px;
+    margin-bottom: 50px;
+    outline-color: aqua;
+}
+
+.iframe-container iframe {
+    position: absolute;        /* Positioned absolutely inside the container */
+    top: 0;
+    left: 0;
+    width: 100%;               /* Width is 100% of the container */
+    height: 100%;              /* Height matches the container */
+    outline-color:brown;
+}
+
+
+  .highlight-black {
+    background-color: black;
+    color: white;
+  } 
+
+  .highlight-green {
+    background-color: rgb(48, 181, 46);
+  } 
+
+  .highlight-orange {
+    background-color: rgb(214, 137, 42);
+  } 
+
+  .strikethrough {
+    text-decoration: line-through;
+  } 
