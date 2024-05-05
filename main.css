@@ -18,6 +18,18 @@ body {
       background-color: #6e6d6d;
   }
 
+  .footer-nav {
+    width: 100%;         /* Ensure the footer takes the full width of its container */
+    box-sizing: border-box; /* Include padding and border in the width calculation */
+    display: flex;       /* Use flexbox for easy alignment */
+    justify-content: space-between; /* Space between to align items on each end */
+}
+
+.footer-nav a {
+    /*text-decoration: none; /* Optional: removes underline from links */
+    /*color: #333;           /* Dark grey color for the text */
+}
+
 p.main-text {
     text-indent: 40px;  /* Indent the first line of each paragraph */
     margin-top: 0;      /* Remove the top margin */
@@ -54,6 +66,14 @@ p.prompt-text {
     width: 100%;               /* Width is 100% of the container */
     height: 100%;              /* Height matches the container */
     outline-color:brown;
+}
+
+.code-style {
+  color: #ce9178; /* This is a common orange color used in themes like Dark+ in VS Code */
+  background-color: black; /* Black background */
+  font-family: 'Consolas', 'Courier New', monospace; /* Monospace font for a code-like appearance */
+  padding: 20px; /* Padding to make the text more readable */
+  border-radius: 5px; /* Optional: rounded corners */
 }
 
 

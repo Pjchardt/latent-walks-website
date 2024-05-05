@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="main.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="container">
+            <h3>The last stop on our first walk.</h3>
+            <p>
+                Our final stop on our walk today is a bit more experimental. We are not going to take this walk ourselves. Instead, we are going to listen to a few creatures as they move about a 2D park.
+            </p>
+            <p>
+                First, we will use some new prompts for the four corners of our park. 
+            </p>
+            <p class="code-style">
+                "A piano playing a G key every half second." <br>
+                "A piano playing a C key every second." <br>
+                "A piano playing a melody in the style of Bach." <br>
+                "A piano playing very low notes in quick succession."
+            </p>
+            <p class="main-text">
+                Now, let’s imagine we have a few creatures, whose movement is random. We will place them in the park, and have them move about. The volume of each audio sample in our park is based on whether a creature is close to it. We can change the number of creatures, to increase or decrease the sonic entropy. We clamp at the creature count at 9 to not break your computer. 
+            </p>
+            <h4 class="interactive-title-text">Interactive Example #3: Sonic creature party in the park</h4>
+            <!--<div class="iframe-container">-->
+                <iframe frameborder="0" src="https://itch.io/embed-upload/10347021?color=ffffff" allowfullscreen="" width="600" height="420">
+                    <a href="https://pjchardt.itch.io/latent-walks-2d-5x5-musicgen">
+                        Play Latent Walks: 2D 5x5 musicGen on itch.io
+                    </a>
+                </iframe>
+            <!--</div>-->
+            <p class="interactive-caption-text ">
+                Click in the window to focus. Enter a number between 0 and nine for number of creatures, then click "Create Creatures" button.
+            </p>
+            <p>
+                I like to imagine these creatures as a species in a little sonic world we have created. A bit glitchy of a world, but with some more design parameters perhaps something interesting will emerge.
+            </p>
+            <p class="main-text">
+                There are two future stops I hope to add to this walk. FIrst, I want to explore an isometric view and height map for these creatures, to see if they feel more creature-like. Second, I want to explore ways of integrating the locomotion systems from the book Vehicles: Experiments in Synthetic Biology by Valentino Braitenberg. It would be fun to have our little machines be attracted to and repulsed by certain frequencies of sound. We will use a mathematical function called a Fast Fourier Transform to calculate the frequency distributions for each of our generated sounds. I think a sweetly poetic way to think about it though, is that each audio clip will have a certain signature, which we will calculate using an FFT, this signature is the personality of our sound. So our little vehicles will move about in a little space of our audio personalities, and the volume of each audio personality is modified by each vehicle. In this way, we get a pleasant (or not so pleasant) generative soundscape. If we change a sound, or change a vehicle, we get a different soundscape.
+            </p>
+            <p>
+                Anyway, those ideas will come later. For now, we are off to our second walk, a trip to the phenomenology machine museum!
+            </p>
+        </div>
+		 <!-- Footer navigation -->
+		 <footer class="footer-nav">
+			<div style="text-align: right;">
+				<a href="walks_1.1.html"><- Previous Page: A 2D park to stroll through</a>
+			</div>
+			<div style="text-align: right;">
+				<a href="walks_2.0.html">Next Page: Walk #2 -></a>
+			</div>
+		</footer>
+    </body>
+</html>
